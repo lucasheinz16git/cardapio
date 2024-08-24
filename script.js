@@ -140,28 +140,28 @@ addressInput.addEventListener("input", function (event) {
 checkoutBtn.addEventListener("click", function () {
 
     //VALIDAR RESTAURANTE ABERTO
-    const isOpen = checkRestauranteOpen();
-    if (!isOpen) {
-        Toastify({
-            text: "Ops o restaurante esta fechado!",
-            duration: 3000,
-            close: true,
-            gravity: "top",
-            position: "right",
-            stopOnFocus: true,
-            style: {
-                background: "#ef4444",
-            },
-        }).showToast();
-        return;
-    }
+    // const isOpen = checkRestauranteOpen();
+    // if (!isOpen) {
+    //     Toastify({
+    //         text: "Ops o restaurante esta fechado!",
+    //         duration: 3000,
+    //         close: true,
+    //         gravity: "top",
+    //         position: "right",
+    //         stopOnFocus: true,
+    //         style: {
+    //             background: "#ef4444",
+    //         },
+    //     }).showToast();
+    //     return;
+    // }
 
-    if (cart.length === 0) return;
-    if (addressInput.value === "") {
-        addressWarn.classList.remove("hidden")
-        addressInput.classList.add("border-red-500")
-        return;
-    }
+    // if (cart.length === 0) return;
+    // if (addressInput.value === "") {
+    //     addressWarn.classList.remove("hidden")
+    //     addressInput.classList.add("border-red-500")
+    //     return;
+    // }
 
     // ENVIAR PEDIDO API WPP
 
